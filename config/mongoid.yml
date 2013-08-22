@@ -27,7 +27,7 @@ development:
         # The time in seconds that Moped should wait before retrying an
         # operation on failure. (default: 1)
         # retry_interval: 1
-  # Configure Mongoid specific options. (optional)
+  # Configurongoid specific options. (optional)
   options:
     # Enable the identity map, needed for eager loading. (default: false)
     # identity_map_enabled: false
