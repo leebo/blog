@@ -3,13 +3,13 @@ source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-gem 'mongoid'
+gem 'mongoid', github: 'mongoid/mongoid'
 
 gem 'bson_ext'
 
 gem 'thin'
 
-#gem 'devise'
+gem 'devise'
 
 gem 'redis-objects'
 
