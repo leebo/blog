@@ -9,7 +9,7 @@
         </div>
       </div>
  <ul class="pager">
-    <li class="previous"><a href="#">&larr; Older</a></li>
-    <li class="next"><a href="#">Newer &rarr;</a></li>
+    <li class="previous"><%= will_paginate @posts, :previous_label %></a></li>
+    <li class="next"><a href="#"><%= will_paginate @posts, :next_label %></a></li>
   </ul>
 
