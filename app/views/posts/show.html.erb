@@ -2,9 +2,9 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="page-header">
-      <h1><%=@post.title  %></h1>
+      <h2><%=@post.title %><small class="pull-right">read times: <%= @post.read_count %></small></h2>
     </div>
-    <p class="lead"><%= @post.content %></p>
+    <p><%= @post.content %></p>
   </div>
 </div>
 
@@ -17,9 +17,10 @@
 
 <% @post.comments.each  do |comment| %>
   <blockquote>
-    
     <% if comment.email %>
-  <img src="<%= toGravatar(comment.email) %>" alt="" />
+  <div class="pull-left">
+    <img style="width:45px;height:45px;" src="<%= toGravatar(comment.email) %>" alt="" />
+  </div> 
   <% end %>
   <%=comment.message %>
   <small class="text-right"><%= time_ago_in_words(comment.created_at) %> ago by <%= comment.nickname %></small>

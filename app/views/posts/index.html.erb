@@ -1,9 +1,8 @@
       <div class="panel panel-default">
-
         <div class="panel-body">
     <% @posts.each do |post| %>
           <div class="page-header">
-            <h3><%= link_to post.title, post %><small> <span class="label label-danger">New</span>(<%= post.created_at%>)</small></h3>
+            <h3><%= link_to post.title, post %> <small>(<%= post.created_at%>)</small> <span class="pull-right badge"><%= post.comments_count %></span> </h3>
           </div>
           <%= post.content %>
       <% end %>
