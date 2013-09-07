@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 
 gem 'mongoid', github: 'mongoid/mongoid'
 
+gem 'gravtastic'
+
 gem 'bson_ext'
 
 gem 'thin'
@@ -39,6 +41,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+gem 'anjlab-bootstrap-rails', '>= 3.0.0.0', :require => 'bootstrap-rails'
 
 #group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

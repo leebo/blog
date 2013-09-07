@@ -11,6 +11,8 @@ development:
       hosts:
         - localhost:27017
       options:
+         use_activesupport_time_zone: true
+         use_utc: false
         # Change whether the session persists in safe mode by default.
         # (default: false)
         # safe: false
