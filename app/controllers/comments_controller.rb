@@ -3,7 +3,10 @@ class CommentsController < ApplicationController
     post = Post.find(params[:post_id])
     post.comments.create(comment_params)
     post.comments_count.increment
-    redirect_to :back
+    respond_to do |format|
+        #format.html { redirect_to :back, notice: 'Post was successfully created.' }
+        format.json { render json: post, status:  :created  }
+    end
   end
 
   def comment_params

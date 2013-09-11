@@ -15,7 +15,7 @@ gem 'devise'
 
 gem 'redis-objects'
 
-gem 'will_paginate'
+gem 'kaminari'
 
 gem 'simple_form'
 

@@ -6,5 +6,5 @@ class Post
   counter :read_count
   field :title, type: String
   field :content, type: String
-  has_many :comments
+  has_many :comments, dependent: :delete
 end
