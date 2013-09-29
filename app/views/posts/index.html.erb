@@ -2,7 +2,7 @@
   <div class="panel-body">
     <% @posts.each do |post| %>
       <div class="page-header">
-        <h3><%= link_to post.title, post %> <small>(<%= post.created_at%>)</small> <span class="pull-right badge">   <%= post.comments_count %> <% if user_signed_in? %> <%= link_to "delete", post, method: :delete %> | <%= link_to "update", edit_post_path(post)  %> <% end %> </span> </h3>
+        <h3><%= link_to post.title, post %> <small>(<%= post.created_at%>)</small> <span class="pull-right badge">   <%= post.comments_count %> <% if user_signed_in? %> <%= link_to "delete", post, remote: true, method: :delete %> | <%= link_to "update", edit_post_path(post)  %> <% end %> </span> </h3>
     </div>
     <%= post.content %>
   <% end %>

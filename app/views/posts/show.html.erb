@@ -27,10 +27,12 @@
   </blockquote>
   <hr />
 <% end %>
+<div id="comments">
+</div>
 
 <div class="panel panel-danger"> 
-<%= simple_form_for [@post, Comment.new], remote: :true do |f| %>
-  <%= f.input :nickname %>
+  <%= simple_form_for [@post, Comment.new], remote: :true do |f| %>
+    <%= f.input :nickname %>
   <%= f.input :email %>
   <%= f.input :message %>
   <%= f.button :submit %>

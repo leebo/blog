@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
     post.comments_count.increment
     respond_to do |format|
         #format.html { redirect_to :back, notice: 'Post was successfully created.' }
-        format.json { render json: post, status:  :created  }
+        format.json { render json: post }
     end
   end
 
