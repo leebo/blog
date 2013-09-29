@@ -7,8 +7,6 @@ gem 'mongoid', github: 'mongoid/mongoid'
 
 gem 'gravtastic'
 
-gem 'bson_ext'
-
 gem 'thin'
 
 gem 'devise'
@@ -18,8 +16,6 @@ gem 'redis-objects'
 gem 'kaminari'
 
 gem 'simple_form'
-
-gem 'acts_as_commentable'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
